@@ -1,8 +1,3 @@
-//import marsJson from "./contracts/MartianMarket.json";
-//import auctionJson from "./contracts/MartianAuction.json";
-
-const marsJson = await (await fetch("./contracts/MartianMarket.json")).json();
-const auctionJson = await (await fetch("./contracts/MartianAuction.json")).json();
 
 const contractAddress = "0x861d81A503e58550A66cfCAe637e923fddc613da"; // ropsten contract address
 
@@ -125,6 +120,13 @@ const dApp = {
     });
   },
   main: async function() {
+    
+    marsJson = await (await fetch("./contracts/MartianMarket.json")).json();
+    auctionJson = await (await fetch("./contracts/MartianAuction.json")).json();
+
+    //import marsJson from "./contracts/MartianMarket.json";
+    //import auctionJson from "./contracts/MartianAuction.json";
+    
     // Initialize web3
     await this.init();
     await this.updateUI();

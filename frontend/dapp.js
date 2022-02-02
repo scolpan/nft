@@ -1,6 +1,8 @@
 //import marsJson from "./contracts/MartianMarket.json";
 //import auctionJson from "./contracts/MartianAuction.json";
 
+
+
 const marsJson = fetch("./contracts/MartianMarket.json");
 const auctionJson = fetch("./contracts/MartianAuction.json");
 

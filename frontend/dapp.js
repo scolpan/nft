@@ -4,7 +4,6 @@
 const marsJson = fetch("./contracts/MartianMarket.json");
 const auctionJson = fetch("./contracts/MartianAuction.json");
 
-
 //require("regenerator-runtime/runtime");
 //const Web3 = require("web3");
 

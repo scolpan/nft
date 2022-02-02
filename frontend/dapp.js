@@ -1,13 +1,8 @@
 //import marsJson from "./contracts/MartianMarket.json";
 //import auctionJson from "./contracts/MartianAuction.json";
 
-
-
-const marsJson = require(["./contracts/MartianMarket.json"]);
-const auctionJson = require(["./contracts/MartianAuction.json"]);
-
-//require("regenerator-runtime/runtime");
-//const Web3 = require("web3");
+const marsJson = await (await fetch("./contracts/MartianMarket.json")).json();
+const auctionJson = await (await fetch("./contracts/MartianAuction.json")).json();
 
 const contractAddress = "0x861d81A503e58550A66cfCAe637e923fddc613da"; // ropsten contract address
 
